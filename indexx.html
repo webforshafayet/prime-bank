@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="languageSelect" onchange="toggleLanguage()">
+        <option value="en">English</option>
+        <option value="bn">Bangla</option>
+    </select>
+
+    <h1 lang="en" id="english-language">english line</h1>
+    <h1 lang="bn" id="bangla-language" style="display: none;">বাংলাদেশ এবং বিশ্বের সর্বশেষ খবর, প্রতিবেদন</h1>
+
+    <script>
+        function toggleLanguage() {
+            var selectedLanguage = document.getElementById("languageSelect").value;
+
+            if (selectedLanguage === "en") {
+                document.getElementById("english-language").style.display = "block";
+                document.getElementById("bangla-language").style.display = "none";
+            } else if (selectedLanguage === "bn") {
+                document.getElementById("english-language").style.display = "none";
+                document.getElementById("bangla-language").style.display = "block";
+            }
+        }
+
+        // Set default language to English
+        document.getElementById("languageSelect").value = "en";
+        toggleLanguage(); // Call the function to show/hide headings based on the default language
+    </script>
+</body>
+</html>

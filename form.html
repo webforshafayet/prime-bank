@@ -1,0 +1,414 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  
+  <head>
+    <title>
+      Crafto - The Multipurpose HTML5 Template
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+    <link rel="shortcut icon" href="img/favicon-prime.png">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="stylesheet" href="demos/elearning/elearning.css" />
+
+
+    <style>
+
+
+
+@font-face {
+            font-family: 'Satoshi' !important;
+            src: url('font/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+                 url('font/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
+                 url('font/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+            /* Add more formats if available */
+            font-weight: normal;
+            font-style: normal;
+            /* You can specify font-weight and font-style if needed */
+        }
+
+        body {
+            font-family: 'Satoshi', sans-serif !important;
+            
+        }
+
+
+
+
+
+        .big-banner-background{
+            background-color: #070710;
+        }
+        /* For screens up to 992px width */
+@media screen and (max-width: 992px) {
+    .cover-background {
+        background-size: cover;
+        min-height: 300px; /* Adjust height as needed */
+    }
+
+    header nav{
+      margin-top: -35px;
+    }
+}
+
+/* For screens above 992px width */
+@media screen and (min-width: 992px) {
+    .cover-background {
+        background-size: contain;
+        
+    }
+}
+ 
+
+
+
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #555; /* Change color as needed */
+    pointer-events: none; /* Ensures that the arrow doesn't interfere with select interaction */
+}
+
+/* Style the select to match the design */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-right: 20px; /* Ensure space for the arrow */
+    cursor: pointer;
+}
+
+
+
+
+
+    </style>
+  </head>
+  
+  <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern"
+  data-mobile-nav-bg-color="#313e3b">
+  
+    <section class="big-banner-background cover-background page-title-big-typography"
+    style="background-image: url(img/full-banner-img.png)">
+ 
+      
+    <header>
+      <nav class="navbar navbar-expand-lg   header-transparent  disable-fixed">
+        <div class="container-fluid">
+          <div class="col-auto col-lg-2 me-lg-0 me-auto">
+            <a class="navbar-brand" href="index.html">
+              <img style="max-height: 80px;" src="img/white-eng-logo.png"  
+              alt >
+              
+            </a>
+          </div>
+         
+          <div class="col-auto col-lg-2 text-end  ">
+            <div class="header-icon">
+              <div class=" icon">
+                <a href="#" target="_blank" style="color: white !important;" >
+                  EN
+                </a>
+                <a href="#" target="_blank">
+                  |
+                </a>
+                <a href="#" target="_blank" style="color: white !important;">
+                  BN
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </nav>
+    </header>
+
+
+      <!-- <div class="left-minus-80px top-25" data-bottom-top="transform: translateY(-80px)"
+      data-top-bottom="transform: translateY(80px)">
+        <img class="logo-logo" src="img/neera-prime-eng-01.png" alt style="display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px -30px 0px -35px;
+        margin-top: -240px;
+     
+        ">
+      </div> -->
+
+
+
+
+      <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100"
+      data-particle="true" data-particle-options="{&quot;particles&quot;: {&quot;number&quot;: {&quot;value&quot;: 8,&quot;density&quot;: {&quot;enable&quot;: true,&quot;value_area&quot;: 2000}},&quot;color&quot;: {&quot;value&quot;: [&quot;#d652b4&quot;, &quot;#d652b4&quot;, &quot;#d652b4&quot;, &quot;#d652b4&quot;, &quot;#d652b4&quot;]},&quot;shape&quot;: {&quot;type&quot;: &quot;circle&quot;,&quot;stroke&quot;:{&quot;width&quot;:0,&quot;color&quot;:&quot;#000000&quot;}},&quot;opacity&quot;: {&quot;value&quot;: 1,&quot;random&quot;: false,&quot;anim&quot;: {&quot;enable&quot;: false,&quot;speed&quot;: 1,&quot;sync&quot;: false}},&quot;size&quot;: {&quot;value&quot;: 8,&quot;random&quot;: true,&quot;anim&quot;: {&quot;enable&quot;: false,&quot;sync&quot;: true}},&quot;line_linked&quot;:{&quot;enable&quot;:false,&quot;distance&quot;:0,&quot;color&quot;:&quot;#ffffff&quot;,&quot;opacity&quot;:1,&quot;width&quot;:1},&quot;move&quot;: {&quot;enable&quot;: true,&quot;speed&quot;:1,&quot;direction&quot;: &quot;right&quot;,&quot;random&quot;: false,&quot;straight&quot;: false}},&quot;interactivity&quot;: {&quot;detect_on&quot;: &quot;canvas&quot;,&quot;events&quot;: {&quot;onhover&quot;: {&quot;enable&quot;: false,&quot;mode&quot;: &quot;repulse&quot;},&quot;onclick&quot;: {&quot;enable&quot;: false,&quot;mode&quot;: &quot;push&quot;},&quot;resize&quot;: true}},&quot;retina_detect&quot;: false}">
+      </div>
+      <div class="container">
+        <div class="row align-items-center extra-small-screen">
+          <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9 position-relative page-title-extra-small"
+          data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [-15, 0], &quot;perspective&quot;: [1200,1200], &quot;scale&quot;: [1.1, 1], &quot;rotateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            <!-- <h1 class="mb-20px alt-font text-yellow">
+              Contact us
+            </h1>
+            <h2 class="fw-500 m-0 ls-minus-2px text-white alt-font">
+              We'd love to hear from your side.
+            </h2> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="overflow-hidden position-relative overlap-height pt-0">
+      <div class="container overlap-gap-section">
+        <div class="row justify-content-center mb-3">
+          <div class="col-12 text-center" data-anime="{ &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 500, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            
+            
+            <center>
+                <div class="left-minus-80px top-25" data-bottom-top="transform: translateY(10px)"
+                data-top-bottom="transform: translateY(80px)">
+                  <img class="logo-logo" src="img/neera-prime-eng-01.png" alt style="display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin: -40px 0px 0px 0px;
+                  ">
+                </div>
+            </center>
+
+
+            
+            <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px" style="font-family: 'Satoshi' !important;">
+             Details
+            </h2>
+          </div>
+ 
+ 
+          
+
+
+
+        </div>
+        <div class="row row-cols-md-1 justify-content-center mb-10 sm-mb-0">
+          <div class="col-xl-9 col-lg-10">
+            <form action="https://craftohtml.themezaa.com/email-templates/contact-form.php"
+            method="post" class="contact-form-style-03">
+              <div class="row" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 500, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+
+
+
+
+                <div class="col-md-6">
+                  <label for="exampleInputEmail1" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">
+                    Your name*
+                  </label>
+                  <div class="position-relative form-group mb-30px">
+                    <span class="form-icon">
+                     
+                    </span>
+                    <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required"
+                    id="exampleInputEmail1" type="text" name="name" placeholder="What's your name?"
+                    />
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="gender" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Gender*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <select class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="address" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Address*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="address" type="text" name="address" placeholder="Enter your address">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Email Address*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="exampleInputEmail1" type="email" name="email" placeholder="Enter your email address">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="nid" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">NID (Number)*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="nid" type="text" name="nid" placeholder="Enter your NID number">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="dob" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Date of Birth*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="dob" type="date" name="dob">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="businessName" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Business Name*</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required" id="businessName" type="text" name="business_name" placeholder="Enter your business name">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="video" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Video</label>
+                    <div class="position-relative form-group mb-30px">
+                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control" id="video" type="file" name="video">
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-6">
+                  <label for="exampleInputEmail1" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">
+                    Your email address*
+                  </label>
+                  <div class="position-relative form-group mb-30px">
+                    <span class="form-icon">
+                   
+                    </span>
+                    <input class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required"
+                    id="exampleInputEmail2" type="email" name="email" placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+
+
+
+                   
+                <div class="col-md-6">
+                  <label for="submitDropdown" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">
+                      What kind of help do you need?
+                  </label>
+                  <div class="position-relative form-group mb-30px">
+                      <div class="select-wrapper">
+                          <select class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required"
+                                  id="submitDropdown" name="submitOption">
+                              <option value="">Select one option</option>
+                              <option value="financial">Financial</option>
+                              <option value="guidance">Guidance</option>
+                          </select>
+                          <span class="select-arrow"></span>
+                      </div>
+                  </div>
+              </div>
+              
+
+ 
+
+
+ 
+     
+                <div class="col-12 mb-35px">
+                    <label for="businessIdea" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Business Idea</label>
+                    <div class="position-relative form-group mb-30px">
+                        <textarea class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control" id="businessIdea" name="business_idea" placeholder="Enter your business idea" rows="4"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="col-12 mb-35px">
+                    <label for="businessDetails" class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0">Business Details</label>
+                    <div class="position-relative form-group mb-30px">
+                        <textarea class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control" id="businessDetails" name="business_details" placeholder="Enter your business details" rows="4"></textarea>
+                    </div>
+                </div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+                <div class="col-md-8 sm-mb-30px text-center text-md-start">
+                  <p class="mb-0 fs-15 lh-26 w-80 lg-w-100">
+                    We are committed to protecting your privacy. We will never collect information
+                    about you without your explicit consent.
+                  </p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                  <input id="exampleInputEmail5" type="hidden" name="redirect" value>
+                  <button class="btn btn-large btn-dark-gray btn-rounded btn-box-shadow btn-switch-text left-icon submit"
+                  type="submit">
+                    <span>
+                      <span>
+                        <i class="fa-regular fa-paper-plane">
+                        </i>
+                      </span>
+                      <span class="btn-double-text" style="font-family: 'Satoshi' !important;" data-text="Send message">
+                        Send message
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-12 md-mb-20px">
+                  <div class="form-results mt-20px d-none">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+ 
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    </script>
+    <script type="text/javascript" src="js/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/vendors.min.js">
+    </script>
+ 
+    <script type="text/javascript" src="js/main.js">
+    </script>
+  </body>
+ 
+</html>
